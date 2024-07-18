@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: "Hind Madurai", sans-serif;
+    background: rgb(21,20,41);
+    background: linear-gradient(148deg, rgba(21,20,41,1) 0%, rgba(49,49,49,1) 82%, rgba(84,74,41,1) 100%);
+}
+
+body ul{
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+ background: #313131;
+ color: #15b630;
+}
+
+.imgLogo img{
+  /* background-image: url('../img/logo.svg'); */
+  width: 70px;
+  height: auto;
+}
+
+.btnLogin {
+  color: #fff;
+  background-color: #FFC700;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.btnRegister {
+  color: #fff;
+  background-color: #FFC700;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.btnCerrarSesion,
+.btnRegistrar {
+  color: #fff;
+  background-color: #FFC700;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+
+
+#principal-html .ps-container{
+  margin: 0 auto;
+  max-width: 1444px;
+  display: flex;
+}
+
+.ps-nav{
+  background: #313131;
+  height: 60em;
+  position: sticky;
+  top: 0;
+}
+
+.ps-nav nav{
+  padding: 5em;
+  display: flex;
+  flex-direction: column;
+  gap: 3.125em;
+}
+.ps-logo img{
+  width: 125px;
+  height: auto;
+}
+
+.ps-nav ul{
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+}
+
+.ps-nav ul li a {
+  color: white;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ps-nav ul li a:hover {
+  color: #FFC700;
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+  transition:ease-in-out 5ms;
+}
+
+.ps-nav ul li a span {
+  color: #FFC700;
+}
+
+.ps-nav ul li a span:hover {
+  color: #fdf9e9;
+}
+
+nav .card-body{
+  width: 12em;
+}
+
+nav .card-body h5{
+  color: #FFC700;
+}
+
+nav .card-body h6, p{
+  color: white !important;
+}
+
+.ps-team {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+}
+
+.ps-team a{
+  color: white;
+  font-weight: 500;
+}
+
+.ps-team a:hover{
+  color: #ffc700;
+}
+
+/* Estilo para el botón de enviar */
+.btn-primary {
+  background-color: #007bff; /* Color de fondo */
+  border-color: #007bff; /* Color del borde */
+  color: #fff; /* Color del texto */
+  border-radius: 10px; /* Borde redondeado */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Cambio de color de fondo al pasar el ratón */
+  border-color: #0056b3; /* Cambio de color del borde al pasar el ratón */
+}
+
+/* Estilo para los enlaces dentro del texto del formulario */
+a {
+  color: #007bff; /* Color del enlace */
+}
+
+a:hover {
+  text-decoration: underline; /* Subrayado al pasar el ratón */
+}
+
+/* Estilo para los botones de registro */
+.btn-secondary {
+  margin: 5px; /* Margen entre botones */
+}
+
+/* Estilo para los íconos de los botones de registro */
+.btn-floating i {
+  font-size: 18px; /* Tamaño del ícono */
+}
+
+/* Estilos para el carousel */
+    #carouselExampleInterval {
+      max-width: auto; /* Ancho máximo del carousel */
+      margin: 0 auto; /* Centra el carousel horizontalmente */
+    }
+
+    .carousel-inner .carousel-item img {
+      max-height: 400px; /* Altura máxima de las imágenes del carousel */
+      object-fit: cover; /* Ajusta el tamaño de las imágenes sin deformarlas */
+    }
+  .fancy-heading small.text-muted {
+    color: #6c757d; /* Color de texto secundario */
+  }
+   /* Default height for small devices */
+   #intro-example {
+    height: 400px;
+  }
+
+  /* Height for devices larger than 992px */
+  @media (min-width: 992px) {
+    #intro-example {
+      height: 600px;
+    }
+  }
+
+  /* Estilo para el título de la tarjeta */
+.card-title {
+  color: #333; /* Color del texto */
+  font-size: 1.5rem; /* Tamaño de fuente */
+  margin-bottom: 1rem; /* Espacio inferior */
+}
+
+/* Estilo para el texto de la tarjeta */
+.card-text {
+  color: #666; /* Color del texto */
+  font-size: 1rem; /* Tamaño de fuente */
+}
+.card-body {
+  max-width: 100%; /* Limitar el ancho máximo */
+  padding: 1rem; 
+}
+
+
+/* Estilo para el botón */
+.btn-primary {
+  background-color: #007bff; /* Color de fondo */
+  border-color: #007bff; /* Color del borde */
+  color: #fff; /* Color del texto */
+  font-size: 1rem; /* Tamaño de fuente */
+  padding: 0.5rem 1rem; /* Relleno */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Cambio de color de fondo al pasar el ratón */
+  border-color: #0056b3; /* Cambio de color del borde al pasar el ratón */
+}
+
+footer .ps-footer {
+    border-top: 1px solid white!important;
+    margin-top: 50px;
+}
+
+footer h6, span, p, i, a {
+  color: white;
+}
+
+footer .copy{
+  border-top: 1px solid white;
+}
+
+
+
+
+
+
+
+.contForm {
+  /* background-color: red; */
+  padding-top: 5px;
+  width: 400px;
+  height: 500px;
+}
+.headForm{
+  background-color: #FFC700;
+  width: 400px;
+  height: 70px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.headForm h2 {
+  padding-top: 20px;
+  text-align: center;
+  color: white;
+}
+.contInput{
+  padding-top: 5px;
+  text-align: center;
+  background-color: rgb(235, 241, 228);
+}
+.contInput label {
+  font-family:Georgia, 'Times New Roman', Times, serif
+}
+.contInput input {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.divBtn {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+  background-color: rgb(235, 241, 228);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.btnEnviar{
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  background-color: #FFC700;
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 1200ms ease-in;
+}

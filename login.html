@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PlaySport</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="icon" href="img/Boostrap.png" />
+    <link rel="icon" href="img/logo.svg" type="flavicon">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.min.css" rel="stylesheet"/>
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse col-md-2" id="navbarExample01">
+            <div class="imgLogo">
+              <a href="#">
+                <img src="img/logo.svg" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="collapse navbar-collapse col-md-10 d-flex flex-row-reverse" id="navbarExample01">
+            <!-- <div>
+              <button class="btnLogin">Login</button>
+            </div> -->
+            <div>
+              <button id="btnRegister" class="btnRegister">Registrarse</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+        <section>
+            <div class="contForm mt-5">
+                <div class="headForm">
+                    <h2>Login</h2>
+                </div>
+                <form id="formLogin" action="" method="post">
+                    <div class="contInput">
+                        <label for="email">Correo:</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="contInput">
+                        <label for="password">Contraseña:</label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+                    <div class="divBtn">
+                        <input type="submit" value="Ingresar" class="btnEnviar">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+    <script src="js/login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
