@@ -302,3 +302,32 @@ footer .copy{
   cursor: pointer;
   transition: all 1200ms ease-in;
 }
+#ct{
+  align-items: flex-start !important;
+  width: 100% !important;
+  justify-content: flex-start !important;
+}
+
+.contactenos{
+  font-size: 10px;
+  width: 90%;
+  margin: 0 auto;
+
+}
+
+.contactenos1{
+  width: 49%;
+  margin: 0.5%;
+  height: 190px;
+  float: left;
+  text-align: center;
+  border: 5px solid white;
+
+}
+
+.contactenos h2{
+  color: #fdf9e9;
+}
+.contactenos h3{
+  margin-top: -10px;
+}
