@@ -4,12 +4,13 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Hind Madurai";
 }
 
 body {
   font-family: "Hind Madurai", sans-serif;
-    background: rgb(21,20,41);
-    background: linear-gradient(148deg, rgba(21,20,41,1) 0%, rgba(49,49,49,1) 82%, rgba(84,74,41,1) 100%);
+  background: rgb(21,20,41);
+  background: linear-gradient(148deg, rgba(21,20,41,1) 0%, rgba(49,49,49,1) 82%, rgba(84,74,41,1) 100%);
 }
 
 body ul{
@@ -17,66 +18,31 @@ body ul{
   padding: 0;
 }
 
-.navbar {
- background: #313131;
- color: #15b630;
+.container {
+  width: calc(100% - 2rem);
+  max-width: 68.75em;
+  margin: 0 auto;
 }
-
-.imgLogo img{
-  /* background-image: url('../img/logo.svg'); */
-  width: 70px;
-  height: auto;
-}
-
-.btnLogin {
-  color: #fff;
-  background-color: #FFC700;
-  border: none;
-  cursor: pointer;
-  padding: 5px;
-  margin: 5px;
-  border-radius: 10px;
-}
-
-.btnRegister {
-  color: #fff;
-  background-color: #FFC700;
-  border: none;
-  cursor: pointer;
-  padding: 5px;
-  border-radius: 10px;
-}
-
-.btnCerrarSesion,
-.btnRegistrar {
-  color: #fff;
-  background-color: #FFC700;
-  border: none;
-  cursor: pointer;
-  padding: 5px;
-  border-radius: 10px;
-}
-
-
 
 #principal-html .ps-container{
   margin: 0 auto;
-  max-width: 1444px;
+  max-width: 1450px;
   display: flex;
 }
 
 .ps-nav{
-  background: #313131;
+  background: #000;
   height: 60em;
   position: sticky;
   top: 0;
 }
 
 .ps-nav nav{
-  padding: 5em;
-  display: flex;
-  flex-direction: column;
-  gap: 3.125em;
+    display: flex;
+    width: 18.75em;
+    padding: 5em 0px 5em 2.5em;
+    flex-direction: column;
+    gap: 6.25em;
 }
 .ps-logo img{
   width: 125px;
@@ -94,20 +60,22 @@ body ul{
 .ps-nav ul li a {
   color: white;
   font-weight: 300;
+  text-transform: uppercase;
   display: flex;
   align-items: center;
   gap: 10px;
+  letter-spacing: 0.05em;
 }
 
 .ps-nav ul li a:hover {
-  color: #FFC700;
+  color: #FBE330;
   border-bottom: 1px solid white;
   padding-bottom: 10px;
   transition:ease-in-out 5ms;
 }
 
 .ps-nav ul li a span {
-  color: #FFC700;
+  color: #FBE330;
 }
 
 .ps-nav ul li a span:hover {
@@ -119,7 +87,7 @@ nav .card-body{
 }
 
 nav .card-body h5{
-  color: #FFC700;
+  color: #FBE330;
 }
 
 nav .card-body h6, p{
@@ -135,11 +103,140 @@ nav .card-body h6, p{
 .ps-team a{
   color: white;
   font-weight: 500;
+  text-transform: uppercase;
 }
 
-.ps-team a:hover{
-  color: #ffc700;
+.ps-team .active{
+  border-right: 5px solid #FBE330;
+  color: #FBE330;
 }
+.ps-team a:hover{
+  color: #FBE330;
+}
+
+.ps-content{
+  background-color: #1e1e1e;
+  padding: 3.125em !important;
+}
+
+.ps-content .search-box{
+  display: flex;
+  border: 1px solid #ccc;
+  background: white;
+  border-radius: 50px;
+  flex: 1 0 0;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 30px;
+}
+.ps-content .search-box span{
+  color: #000;
+}
+
+.ps-content .search-box input{
+  background-color: white;
+  border: none;
+  width: 100%;
+  font-family: "Hind Madurai", sans-serif;
+  font-size: .8em;
+}
+
+.ps-content .btn-search{
+  padding: 10px 30px;
+  font-size: .8em;
+  background: #FBE330;
+  border-radius: 50px;
+}
+
+/*login-register-cerrarsesion*/
+.login, .register{
+  display: flex;
+  align-items: center;
+  gap: 5em;
+  align-self: stretch;
+}
+
+.login .form-login, #formLogin, .form-register{
+  display: flex;
+  flex-direction: column;
+  gap: 3.125em;
+  width: 37.5em;
+}
+
+.head-form{
+  color: #FFF;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 12px;
+  text-transform: uppercase;
+}
+.login .form-login #formLogin .login-txt, .register-txt, #formRegister{
+  display: flex;
+  flex-direction: column;
+  gap:30px
+}
+
+.contInput{
+  display: flex;
+  flex-direction: column;
+  gap: .313em;
+}
+
+.contInput label{
+  color: #FBE330;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.contInput input{
+  border-radius: 10px;
+  background: #CBCBCB;
+  padding: 10px 20px;
+}
+
+.divBtn .btnEnviar{
+  padding: 10px 30px;
+  font-size: .8em;
+  background: #FBE330;
+  border-radius: 50px;
+}
+
+.btnLogin {
+  color: #fff;
+  background-color: #FBE330;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.btnRegister {
+  color: #FBE330;
+  cursor: pointer;
+}
+
+.btnCerrarSesion,
+.btnRegistrar {
+  color: #000;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 50px;
+  font-size: .8em;
+  background: #FBE330;
+  padding: 10px 30px;
+  align-items: center;
+}
+
+.btnCerrarSesion span{
+  color: #000;
+}
+
+
 
 /* Estilo para el botón de enviar */
 .btn-primary {
@@ -249,8 +346,7 @@ footer .copy{
 
 
 
-.contForm {
-  /* background-color: red; */
+/*.contForm {
   padding-top: 5px;
   width: 400px;
   height: 500px;
@@ -330,4 +426,4 @@ footer .copy{
 }
 .contactenos h3{
   margin-top: -10px;
-}
+}*/
